@@ -1,0 +1,22 @@
+.app {
+  text-align: center;
+  padding: 5%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.logo {
+  width: 200px;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-body {
+  text-align: left;
+  font-size: 12px;
+}
