@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
 import { FormGroup, FormControl, InputGroup } from 'react-bootstrap'
-import Photos from './photos'
-import AlertMessage from './alerts'
+import Photos from './components/photos'
+import AlertMessage from './components/alerts'
+import banner from "./thats-not-mars.png"
 
 import './style.css'
 
 import moment from 'moment'
 
+// Used for reseting app
 const initialState = {
   query: '',
   earth_date: null,
   alert: '',
-  photos: []
+  photos: [],
+  isLoaded: false,
+  items: []
 }
 
 class App extends Component {
@@ -49,10 +53,10 @@ class App extends Component {
       <div className="app">
         <div className="app-title">
           {/* Yes I am aware that is a picture of Jupiter */}
-          <img className="app-title mb-5 logo" src="./thats.not.mars.png" alt="null" />
+          <img className="app-title mb-5 logo" src={ banner } alt="null" />
         </div>
         <div className="app-body container">
-          <FormGroup className='row justify-content-cneter d-block mx-0'>
+          <FormGroup className='row justify-content-center d-block mx-0'>
             <InputGroup className='input'>
               <FormControl
                 type='date'

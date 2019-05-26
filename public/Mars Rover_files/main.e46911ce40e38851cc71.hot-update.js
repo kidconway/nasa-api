@@ -22,12 +22,13 @@ var _jsxFileName = "/Users/clementine/Desktop/Code-Bits/ReactJS/nasa-api/src/app
 
 
 class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(args) {
-    super(args);
+  constructor(props) {
+    super(props);
     this.state = {
       query: '',
       earth_date: null,
       error: null,
+      alert: '',
       isLoaded: false,
       items: []
     };
