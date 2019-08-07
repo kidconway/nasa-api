@@ -8,7 +8,7 @@ class Photos extends Component {
     if(this.props.photos){
       const photo = this.props.photos.map(p => {
         return (
-            <div className="card bg-dark mt-3 mr-3 justify-content-center" key={p.id}>
+            <div className="card bg-dark mt-3 mr-3 d-flex justify-content-center" key={p.id}>
               <img className="card-img-top" src={p.img_src ? ( p.img_src) : "./image-not-found.png"} alt='null' />
               <div className="card-body">
                 <table className="table-responsive no-wrap">
